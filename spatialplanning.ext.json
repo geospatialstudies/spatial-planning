@@ -11,7 +11,7 @@
   
 	"+PlanGroup": {
       "allOf": [
-        { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
+        { "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/cityobjects.schema.json#/_AbstractCityObject" },
         {
           "properties": {
             "type": { "enum": [ "+PlanGroup" ] },
@@ -30,22 +30,22 @@
               "items": {
                  "oneOf": [
                 {
-                  "$ref": "geomprimitives.schema.json#/MultiLineString"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/MultiLineString"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/MultiSurface"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/MultiSurface"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/CompositeSurface"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/CompositeSurface"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/Solid"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/Solid"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/CompositeSolid"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/CompositeSolid"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/MultiSolid"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/MultiSolid"
                 }
                
               ]
@@ -59,7 +59,7 @@
 	
 	"+PlanBlock": {
       "allOf": [
-        { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
+        { "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/cityobjects.schema.json#/_AbstractCityObject" },
         {
           "properties": {
             "type": { "enum": [ "+PlanBlock" ] },
@@ -84,22 +84,22 @@
               "items": {
                  "oneOf": [
                 {
-                  "$ref": "geomprimitives.schema.json#/MultiLineString"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/MultiLineString"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/MultiSurface"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/MultiSurface"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/CompositeSurface"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/CompositeSurface"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/Solid"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/Solid"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/CompositeSolid"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/CompositeSolid"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/MultiSolid"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/MultiSolid"
                 }
                
               ]
@@ -113,7 +113,7 @@
 	
 	"+PlanUnit": {
       "allOf": [
-        { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
+        { "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/cityobjects.schema.json#/_AbstractCityObject" },
         {
           "properties": {
             "type": { "enum": [ "+PlanUnit" ] },
@@ -146,22 +146,22 @@
               "items": {
                  "oneOf": [
                 {
-                  "$ref": "geomprimitives.schema.json#/MultiLineString"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/MultiLineString"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/MultiSurface"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/MultiSurface"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/CompositeSurface"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/CompositeSurface"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/Solid"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/Solid"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/CompositeSolid"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/CompositeSolid"
                 },
                 {
-                  "$ref": "geomprimitives.schema.json#/MultiSolid"
+                  "$ref": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/schemas/geomprimitives.schema.json#/MultiSolid"
                 }
                
               ]
