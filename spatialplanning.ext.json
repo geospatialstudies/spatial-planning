@@ -52,7 +52,7 @@
               }
             }
           },
-          "required": [ "type", "geometry" ]
+          "required": [ "children", type", "geometry" ]
         }
       ]
     },
@@ -74,7 +74,8 @@
 				"naturalRiskSafetyArea": { "type": "string" },
 				"pbID": { "type": "string" },
 				"protectedSite": { "type": "string" },
-				"restrictionZone": { "type": "string" }
+				"restrictionZone": { "type": "string" },
+				"pgID": { "type": "string" },
                 
               }
             },
@@ -106,7 +107,7 @@
               }
             }
           },
-          "required": [ "type", "geometry" ]
+          "required": [ "parent", type", "geometry" ]
         }
       ]
     },
@@ -136,7 +137,10 @@
 				"volume": { "type": "number" },
 				"volumeIndications": { "type": "string" },
 				"zoningName": { "type": "string" },
-				"zoningType": { "type": "string" }
+				"zoningType": { "type": "string" },
+				"pbID": { "type": "number" },
+				"planType": { "type": "string" },
+				"maxHeight": { "type": "number" }
                 
               }
             },
