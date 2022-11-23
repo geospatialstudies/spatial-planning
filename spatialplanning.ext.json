@@ -52,7 +52,7 @@
               }
             }
           },
-          "required": [ "children", type", "geometry" ]
+          "required": [ "children", "type", "geometry" ]
         }
       ]
     },
@@ -107,7 +107,7 @@
               }
             }
           },
-          "required": [ "parent", type", "geometry" ]
+          "required": [ "parent", "type", "geometry" ]
         }
       ]
     },
