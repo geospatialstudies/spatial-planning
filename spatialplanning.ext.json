@@ -75,7 +75,7 @@
 				"pbID": { "type": "string" },
 				"protectedSite": { "type": "string" },
 				"restrictionZone": { "type": "string" },
-				"pgID": { "type": "string" },
+				"pgID": { "type": "string" }
                 
               }
             },
@@ -175,7 +175,7 @@
           "required": [ "type", "geometry" ]
         }
       ]
-    }
+    },
     
   
   }	  
