@@ -1,7 +1,7 @@
 {
   "type": "CityJSONExtension",
   "name": "Noise",
-  "url": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/spatialplanning.ext.json",
+  "url": "https://www.cityjson.org/tutorials/files/noise.ext.json",
   "version": "1.1.1",
   "versionCityJSON": "1.1",
   "description": "Extension for Noise Emission Simulation",
@@ -98,7 +98,10 @@
               "type": "array",
               "items": {
                 "oneOf": [
-                  { "$ref": "geomprimitives.schema.json#/MultiLineString" }
+                  { "$ref": "geomprimitives.schema.json#/MultiLineString" },
+				  {
+                  "$ref": "geomprimitives.schema.json#/Solid"
+                },
                 ]
               }
             }
