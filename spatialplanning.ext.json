@@ -9,7 +9,7 @@
   "extraAttributes": {},
   "extraCityObjects": {
   
-	"+PlanGroup": {
+    "+PlanGroup": {
       "allOf": [
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
@@ -56,8 +56,8 @@
         }
       ]
     },
-	
-	"+PlanBlock": {
+
+   "+PlanBlock": {
       "allOf": [
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
@@ -111,8 +111,8 @@
         }
       ]
     },
-	
-	"+PlanUnit": {
+
+  "+PlanUnit": {
       "allOf": [
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
@@ -177,7 +177,7 @@
       ]
     },
 	
-	"+NoiseCityFurnitureSegment": {
+"+NoiseCityFurnitureSegment": {
       "allOf": [
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
