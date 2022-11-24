@@ -1,17 +1,19 @@
 {
   "type": "CityJSONExtension",
-  "name": "SpatialPlanning",
-  "description": "Extension to model the spatial planning",
+  "name": "Noise",
   "uri": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/spatialplanning.ext.json",
   "version": "1.1.0",
   "versionCityJSON": "1.1",
-  "extraRootProperties": {},     
-  "extraAttributes": {},
-  "extraCityObjects": {
+  "description": "Extension for Noise Emission Simulation",
   
-	
-	
-	"+NoiseCityFurnitureSegment": {
+  "definitions": {},
+  
+  "extraRootProperties": {},
+
+  "extraAttributes": {},
+  
+  "extraCityObjects": {
+    "+NoiseCityFurnitureSegment": {
       "allOf": [
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
@@ -44,7 +46,9 @@
       ]
     },
     
-  
-  }	  
-	  
+    
+    
+    
   }
+  
+}
