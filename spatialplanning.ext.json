@@ -176,6 +176,39 @@
         }
       ]
     },
+	
+	"+NoiseCityFurnitureSegment": {
+      "allOf": [
+        { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
+        {
+          "properties": {
+            "type": { "enum": [ "+NoiseCityFurnitureSegment" ] },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "reflection": { "type": "string" },
+                "reflectionCorrection": { "$ref": "#/definitions/measure" },
+                "height": { "$ref": "#/definitions/measure" },
+                "distance": { "$ref": "#/definitions/measure" }
+              }
+            },
+            "parents": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "geometry": {
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  { "$ref": "geomprimitives.schema.json#/MultiLineString" }
+                ]
+              }
+            }
+          },
+          "required": [ "type", "parents", "geometry" ]
+        }
+      ]
+    },
     
   
   }	  
