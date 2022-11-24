@@ -98,15 +98,12 @@
               "type": "array",
               "items": {
                 "oneOf": [
-                  { "$ref": "geomprimitives.schema.json#/MultiLineString" },
-				  {
-                  "$ref": "geomprimitives.schema.json#/Solid"
-                },
+                  { "$ref": "geomprimitives.schema.json#/MultiLineString" }
                 ]
               }
             }
           },
-          "required": [ "type", "geometry" ]
+          "required": [ "type", "parents", "geometry" ]
         }
       ]
     },
