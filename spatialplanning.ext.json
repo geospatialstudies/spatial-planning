@@ -1,203 +1,187 @@
 {
   "type": "CityJSONExtension",
-  "name": "Noise",
-  "url": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/spatialplanning.ext.json",
-  "version": "1.1.1",
+  "name": "SpatialPlanning",
+  "description": "Extension to model the spatial planning",
+  "uri": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/spatialplanning.ext.json",
+  "version": "0.1",
   "versionCityJSON": "1.1",
-  "description": "Extension for Noise Emission Simulation",
-  
-  "definitions": {
-    "measure": {
-      "type": "object",
-      "properties": {
-        "value": { "type": "number" },
-        "uom": { "type": "string" }
-      },
-      "required": [ "value", "uom" ],
-      "additionalProperties": false
-    },
-    
-    "train": {
-      "type": "object",
-      "properties": {
-        "trainType": { "type": "string" },
-        "trainTypeCorrection": { "$ref": "#/definitions/measure" },
-        "brakePortionDay": { "$ref": "#/definitions/measure" },
-        "brakePortionEvening": { "$ref": "#/definitions/measure" },
-        "brakePortionNight": { "$ref": "#/definitions/measure" },
-        "lengthDay": { "$ref": "#/definitions/measure" },
-        "lengthEvening": { "$ref": "#/definitions/measure" },
-        "lengthNight": { "$ref": "#/definitions/measure" },
-        "speedDay": { "$ref": "#/definitions/measure" },
-        "speedEvening": { "$ref": "#/definitions/measure" },
-        "speedNight": { "$ref": "#/definitions/measure" },
-        "additionalCorrectionTrain": { "$ref": "#/definitions/measure" }
-      },
-      "additionalProperties": false
-    }
-  },
-  
-  "extraRootProperties": {},
-
-  "extraAttributes": {
-    "Building": {
-      "+noise-buildingReflection": { "type": "string" },
-      "+noise-buildingReflectionCorrection": { "$ref": "#/definitions/measure" },
-      "+noise-buildingLDenMax": { "$ref": "#/definitions/measure" },
-      "+noise-buildingLDenMin": { "$ref": "#/definitions/measure" },
-      "+noise-buildingLDenEq": { "$ref": "#/definitions/measure" },
-      "+noise-buildingLNightMax": { "$ref": "#/definitions/measure" },
-      "+noise-buildingLNightMin": { "$ref": "#/definitions/measure" },
-      "+noise-buildingLNightEq": { "$ref": "#/definitions/measure" },
-      "+noise-buildingHabitants": { "type": "integer" },
-      "+noise-buildingAppartments": { "type": "integer" },
-      "+noise-buildingImmissionPoints": { 
-        "type": "array",
-        "items": { "type": "integer" } },
-      "+noise-remark": { "type": "string" }
-    },
-    "BuildingPart": {
-      "+noise-buildingReflection": { "type": "string" },
-      "+noise-buildingReflectionCorrection": { "$ref": "#/definitions/measure" },
-      "+noise-buildingLDenMax": { "$ref": "#/definitions/measure" },
-      "+noise-buildingLDenMin": { "$ref": "#/definitions/measure" },
-      "+noise-buildingLDenEq": { "$ref": "#/definitions/measure" },
-      "+noise-buildingLNightMax": { "$ref": "#/definitions/measure" },
-      "+noise-buildingLNightMin": { "$ref": "#/definitions/measure" },
-      "+noise-buildingLNightEq": { "$ref": "#/definitions/measure" },
-      "+noise-buildingHabitants": { "type": "integer" },
-      "+noise-buildingAppartments": { "type": "integer" },
-      "+noise-buildingImmissionPoints": { 
-        "type": "array",
-        "items": { "type": "integer" } },
-      "+noise-remark": { "type": "string" }
-    }
-  },
-  
+  "extraRootProperties": {},     
+  "extraAttributes": {},
   "extraCityObjects": {
-    "+NoiseCityFurnitureSegment": {
+  
+	"+PlanGroup": {
       "allOf": [
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
           "properties": {
-            "type": { "enum": [ "+NoiseCityFurnitureSegment" ] },
+            "type": { "enum": [ "+PlanGroup" ] },
             "attributes": {
               "type": "object",
               "properties": {
-                "reflection": { "type": "string" },
-                "reflectionCorrection": { "$ref": "#/definitions/measure" },
-                "height": { "$ref": "#/definitions/measure" },
-                "distance": { "$ref": "#/definitions/measure" }
+                "hierarchyLevel": { "type": "integer" },
+				"label": { "type": "string" },
+				"pgID": { "type": "string" }
+                
               }
             },
             
             "geometry": {
               "type": "array",
               "items": {
-                "oneOf": [
-                  { "$ref": "geomprimitives.schema.json#/MultiLineString" },
-				  {
+                 "oneOf": [
+                {
+                  "$ref": "geomprimitives.schema.json#/MultiLineString"
+                },
+                {
+                  "$ref": "geomprimitives.schema.json#/MultiSurface"
+                },
+                {
+                  "$ref": "geomprimitives.schema.json#/CompositeSurface"
+                },
+                {
                   "$ref": "geomprimitives.schema.json#/Solid"
                 },
-                ]
+                {
+                  "$ref": "geomprimitives.schema.json#/CompositeSolid"
+                },
+                {
+                  "$ref": "geomprimitives.schema.json#/MultiSolid"
+                }
+               
+              ]
+              }
+            }
+          },
+          "required": [ "children", "type", "geometry" ]
+        }
+      ]
+    },
+	
+	"+PlanBlock": {
+      "allOf": [
+        { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
+        {
+          "properties": {
+            "type": { "enum": [ "+PlanBlock" ] },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "blockName": { "type": "string" },
+				"constraintDescription": { "type": "string" },
+				"constraintName": { "type": "string" },
+				"easementType": { "type": "string" },
+				"functionType": { "type": "string" },
+				"naturalRiskSafetyArea": { "type": "string" },
+				"pbID": { "type": "string" },
+				"protectedSite": { "type": "string" },
+				"restrictionZone": { "type": "string" },
+				"pgID": { "type": "string" }
+                
+              }
+            },
+            
+            "geometry": {
+              "type": "array",
+              "items": {
+                 "oneOf": [
+                {
+                  "$ref": "geomprimitives.schema.json#/MultiLineString"
+                },
+                {
+                  "$ref": "geomprimitives.schema.json#/MultiSurface"
+                },
+                {
+                  "$ref": "geomprimitives.schema.json#/CompositeSurface"
+                },
+                {
+                  "$ref": "geomprimitives.schema.json#/Solid"
+                },
+                {
+                  "$ref": "geomprimitives.schema.json#/CompositeSolid"
+                },
+                {
+                  "$ref": "geomprimitives.schema.json#/MultiSolid"
+                }
+               
+              ]
+              }
+            }
+          },
+          "required": [ "parent", "type", "geometry" ]
+        }
+      ]
+    },
+	
+	"+PlanUnit": {
+      "allOf": [
+        { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
+        {
+          "properties": {
+            "type": { "enum": [ "+PlanUnit" ] },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "area": { "type": "number" },
+				"buildingIndications": { "type": "string" },
+				"easement": { "type": "string" },
+				"heightIndications": { "type": "string" },
+				"otherConstructionIndications": { "type": "string" },
+				"otherDimesionIndications": { "type": "string" },
+				"permitType": { "type": "string" },
+				"puID": { "type": "string" },
+				"shapeIndications": { "type": "string" },
+				"statusType": { "type": "string" },
+				"surfaceIndications": { "type": "string" },
+				"surfaceRelation": { "type": "string" },
+				"unitIndications": { "type": "integer" },
+				"volume": { "type": "number" },
+				"volumeIndications": { "type": "string" },
+				"zoningName": { "type": "string" },
+				"zoningType": { "type": "string" },
+				"pbID": { "type": "number" },
+				"planType": { "type": "string" },
+				"maxHeight": { "type": "number" }
+                
+              }
+            },
+			"parents": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            
+            "geometry": {
+              "type": "array",
+              "items": {
+                 "oneOf": [
+                {
+                  "$ref": "geomprimitives.schema.json#/MultiLineString"
+                },
+                {
+                  "$ref": "geomprimitives.schema.json#/MultiSurface"
+                },
+                {
+                  "$ref": "geomprimitives.schema.json#/CompositeSurface"
+                },
+                {
+                  "$ref": "geomprimitives.schema.json#/Solid"
+                },
+                {
+                  "$ref": "geomprimitives.schema.json#/CompositeSolid"
+                },
+                {
+                  "$ref": "geomprimitives.schema.json#/MultiSolid"
+                }
+               
+              ]
               }
             }
           },
           "required": [ "type", "geometry" ]
         }
       ]
-    },
-    
-    "+NoiseRoadSegment": {
-      "allOf": [
-        { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
-        {
-          "properties": {
-            "type": { "enum": [ "+NoiseRoadSegment" ] },
-            "attributes": {
-              "type": "object",
-              "properties": {
-                "mDay": { "$ref": "#/definitions/measure" },
-                "mEvening": { "$ref": "#/definitions/measure" },
-                "mNight": { "$ref": "#/definitions/measure" },
-                "mDay16": { "$ref": "#/definitions/measure" },
-                "pDay": { "$ref": "#/definitions/measure" },
-                "pEvening": { "$ref": "#/definitions/measure" },
-                "pNight": { "$ref": "#/definitions/measure" },
-                "pDay16": { "$ref": "#/definitions/measure" },
-                "dtv": { "$ref": "#/definitions/measure" },
-                "speedDayPkw": { "$ref": "#/definitions/measure" },
-                "speedEveningPkw": { "$ref": "#/definitions/measure" },
-                "speedNightPkw": { "$ref": "#/definitions/measure" },
-                "speedDayLkw": { "$ref": "#/definitions/measure" },
-                "speedEveningLkw": { "$ref": "#/definitions/measure" },
-                "speedNightLkw": { "$ref": "#/definitions/measure" },              
-                "roadSurfaceMaterial": { "type": "string" },
-                "roadSurfaceCorrection": { "$ref": "#/definitions/measure" },
-                "distanceCarriageway": { "$ref": "#/definitions/measure" },
-                "distanceD": { "$ref": "#/definitions/measure" },
-                "bridge": { "type": "boolean" },
-                "tunnel": { "type": "boolean" },
-                "roadGradientPercent": { "$ref": "#/definitions/measure" },
-                "lineage": { "type": "string" }
-              }
-            },
-            "parents": {
-              "type": "array",
-              "items": {"type": "string"}
-            },
-            "geometry": {
-              "type": "array",
-              "items": {
-                "oneOf": [
-                  { "$ref": "geomprimitives.schema.json#/MultiLineString" }
-                ]
-              }
-            }
-          },
-          "required": [ "type", "parents", "geometry" ]
-        }
-      ]
-    },
-    
-    "+NoiseRailwaySegment": {
-      "allOf": [
-        { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
-        {
-          "properties": {
-            "type": { "enum": [ "+NoiseRailwaySegment" ] },
-            "attributes": {
-              "type": "object",
-              "properties": {
-                "railwaySurfaceMaterial": { "type": "string" },
-                "railwaySurfaceCorrection": { "$ref": "#/definitions/measure" },
-                "bridge": { "type": "boolean" },
-                "crossing": { "type": "boolean" },
-                "curveRadius": { "$ref": "#/definitions/measure" },
-                "additionalCorrectionSegment": { "$ref": "#/definitions/measure" }
-              }
-            },
-            "usedBy": {
-              "type": "array",
-              "items": { "$ref": "#/definitions/train" }
-            },
-            "parents": {
-              "type": "array",
-              "items": {"type": "string"}
-            },
-            "geometry": {
-              "type": "array",
-              "items": {
-                "oneOf": [
-                  { "$ref": "geomprimitives.schema.json#/MultiLineString" }
-                ]
-              }
-            }
-          },
-          "required": [ "type", "parents", "geometry" ]
-        }
-      ]
     }
-  }
+    
   
-}
+  }	  
+	  
+  }
