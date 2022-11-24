@@ -90,10 +90,7 @@
                 "distance": { "$ref": "#/definitions/measure" }
               }
             },
-            "parents": {
-              "type": "array",
-              "items": {"type": "string"}
-            },
+            
             "geometry": {
               "type": "array",
               "items": {
