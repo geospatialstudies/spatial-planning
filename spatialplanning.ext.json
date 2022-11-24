@@ -1,6 +1,6 @@
 {
   "type": "CityJSONExtension",
-  "name": "Noise",
+  "name": "spatialPlanning",
   "url": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/spatialplanning.ext.json",
   "version": "1.1.1",
   "versionCityJSON": "1.1",
