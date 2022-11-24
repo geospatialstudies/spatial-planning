@@ -3,7 +3,7 @@
   "name": "SpatialPlanning",
   "description": "Extension to model the spatial planning",
   "uri": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning/main/spatialplanning.ext.json",
-  "version": "0.1",
+  "version": "1.1.0",
   "versionCityJSON": "1.1",
   "extraRootProperties": {},     
   "extraAttributes": {},
@@ -11,7 +11,7 @@
   
 	
 	
-"+NoiseCityFurnitureSegment": {
+	"+NoiseCityFurnitureSegment": {
       "allOf": [
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
