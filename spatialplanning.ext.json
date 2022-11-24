@@ -128,7 +128,7 @@
 				"otherConstructionIndications": { "type": "string" },
 				"otherDimesionIndications": { "type": "string" },
 				"permitType": { "type": "string" },
-				"puID": { "type": "string" },
+				"puID": { "type": "number" },
 				"shapeIndications": { "type": "string" },
 				"statusType": { "type": "string" },
 				"surfaceIndications": { "type": "string" },
