@@ -72,7 +72,7 @@
 				"easementType": { "type": "string" },
 				"functionType": { "type": "string" },
 				"naturalRiskSafetyArea": { "type": "string" },
-				"pbID": { "type": "string" },
+				"pbID": { "type": "number" },
 				"protectedSite": { "type": "string" },
 				"restrictionZone": { "type": "string" },
 				"pgID": { "type": "string" }
@@ -128,7 +128,7 @@
 				"otherConstructionIndications": { "type": "string" },
 				"otherDimesionIndications": { "type": "string" },
 				"permitType": { "type": "string" },
-				"puID": { "type": "number" },
+				"puID": { "type": "string" },
 				"shapeIndications": { "type": "string" },
 				"statusType": { "type": "string" },
 				"surfaceIndications": { "type": "string" },
@@ -138,9 +138,10 @@
 				"volumeIndications": { "type": "string" },
 				"zoningName": { "type": "string" },
 				"zoningType": { "type": "string" },
-				"pbID": { "type": "number" },
+				"pbID": { "type": "string" },
 				"planType": { "type": "string" },
-				"maxHeight": { "type": "number" }
+				"maxHeight": { "type": "number" },
+				"planID": { "type": "number" }
                 
               }
             },
