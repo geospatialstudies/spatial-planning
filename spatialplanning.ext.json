@@ -72,7 +72,7 @@
 				"easementType": { "type": "string" },
 				"functionType": { "type": "string" },
 				"naturalRiskSafetyArea": { "type": "string" },
-				"pbID": { "type": "number" },
+				"pbID": { "type": "string" },
 				"protectedSite": { "type": "string" },
 				"restrictionZone": { "type": "string" },
 				"pgID": { "type": "string" }
