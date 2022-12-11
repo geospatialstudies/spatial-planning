@@ -107,7 +107,7 @@
               }
             }
           },
-          "required": [ "children", "parents", "type", "geometry" ]
+          "required": [ "parents", "type", "geometry" ]
         }
       ]
     },
@@ -173,7 +173,7 @@
               }
             }
           },
-          "required": [ "parents", "type", "geometry" ]
+          "required": [ "type", "geometry" ]
         }
       ]
     }
