@@ -19,8 +19,8 @@
               "type": "object",
               "properties": {
                 "hierarchyLevel": { "type": "integer" },
-		"label": { "type": "string" },
-		"pgID": { "type": "string" }
+				"label": { "type": "string" },
+				"pgID": { "type": "string" }
                 
               }
             },
@@ -67,15 +67,15 @@
               "type": "object",
               "properties": {
                 "blockName": { "type": "string" },
-		"constraintDescription": { "type": "string" },
-		"constraintName": { "type": "string" },
-		"easementType": { "type": "string" },
-		"functionType": { "type": "string" },
-		"naturalRiskSafetyArea": { "type": "string" },
-		"pbID": { "type": "string" },
-		"protectedSite": { "type": "string" },
-		"restrictionZone": { "type": "string" },
-		"pgID": { "type": "string" }
+				"constraintDescription": { "type": "string" },
+				"constraintName": { "type": "string" },
+				"easementType": { "type": "string" },
+				"functionType": { "type": "string" },
+				"naturalRiskSafetyArea": { "type": "string" },
+				"pbID": { "type": "string" },
+				"protectedSite": { "type": "string" },
+				"restrictionZone": { "type": "string" },
+				"pgID": { "type": "string" }
                 
               }
             },
@@ -122,26 +122,27 @@
               "type": "object",
               "properties": {
                 "area": { "type": "number" },
-		"buildingIndications": { "type": "string" },
-		"easement": { "type": "string" },
-		"heightIndications": { "type": "string" },
-		"otherConstructionIndications": { "type": "string" },
-		"otherDimesionIndications": { "type": "string" },
-		"permitType": { "type": "string" },
-		"puID": { "type": "string" },
-		"shapeIndications": { "type": "string" },
-		"statusType": { "type": "string" },
-		"surfaceIndications": { "type": "string" },
-		"surfaceRelation": { "type": "string" },
-		"unitIndications": { "type": "integer" },
-		"volume": { "type": "number" },
-		"volumeIndications": { "type": "string" },
-		"zoningName": { "type": "string" },
-		"zoningType": { "type": "string" },
-		"pbID": { "type": "string" },
-		"planType": { "type": "string" },
-		"maxHeight": { "type": "number" },
-		"planID": { "type": "number" }
+				"buildingIndications": { "type": "string" },
+				"easement": { "type": "string" },
+				"heightIndications": { "type": "string" },
+				"otherConstructionIndications": { "type": "string" },
+				"otherDimesionIndications": { "type": "string" },
+				"permitType": { "type": "string" },
+				"puID": { "type": "string" },
+				"shapeIndications": { "type": "string" },
+				"statusType": { "type": "string" },
+				"surfaceIndications": { "type": "string" },
+				"surfaceRelation": { "type": "string" },
+				"unitIndications": { "type": "integer" },
+				"volume": { "type": "number" },
+				"volumeIndications": { "type": "string" },
+				"zoningName": { "type": "string" },
+				"zoningType": { "type": "string" },
+				"zoningSubType": { "type": "string" },
+				"pbID": { "type": "string" },
+				"planType": { "type": "string" },
+				"maxHeight": { "type": "number" },
+				"planID": { "type": "number" }
                 
               }
             },
