@@ -1,0 +1,612 @@
+{
+  "all_errors": [],
+  "dataset_errors": [],
+  "features": [
+    {
+      "errors": [],
+      "id": "PlanBlock1",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanBlock",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanBlock2",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanBlock",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanBlock3",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanBlock",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanBlock4",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanBlock",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanBlock5",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanBlock",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanBlock6",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanBlock",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanBlock7",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanBlock",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanBlock8",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanBlock",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanGroup1",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanGroup",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit1",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit10",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit11",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit12",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit13",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit14",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit15",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit16",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit17",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit18",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit19",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit2",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit20",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit21",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit22",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit23",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit24",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit25",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit26",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit27",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit28",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit29",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit3",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit4",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit5",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit6",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit7",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit8",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    },
+    {
+      "errors": [],
+      "id": "PlanUnit9",
+      "primitives": [
+        {
+          "errors": [],
+          "id": "0",
+          "numbersolids": 1,
+          "type": "MultiSolid",
+          "validity": true
+        }
+      ],
+      "type": "+PlanUnit",
+      "validity": true
+    }
+  ],
+  "features_overview": [
+    {
+      "total": 8,
+      "type": "+PlanBlock",
+      "valid": 8
+    },
+    {
+      "total": 1,
+      "type": "+PlanGroup",
+      "valid": 1
+    },
+    {
+      "total": 29,
+      "type": "+PlanUnit",
+      "valid": 29
+    }
+  ],
+  "input_file": "/var/www/geovalidation/val3dity/uploads/zp2.json",
+  "input_file_type": "CityJSON",
+  "parameters": {
+    "overlap_tol": -1.0,
+    "planarity_d2p_tol": 0.01,
+    "planarity_n_tol": 20.0,
+    "snap_tol": 0.001
+  },
+  "primitives_overview": [
+    {
+      "total": 38,
+      "type": "MultiSolid",
+      "valid": 38
+    }
+  ],
+  "time": "Fri Jan 13 21:32:09 2023 CET",
+  "type": "val3dity_report",
+  "val3dity_version": "2.3.1",
+  "validity": true
+}
